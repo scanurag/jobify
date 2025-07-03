@@ -46,7 +46,7 @@
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](./screenshots/home.png)
+![Home Page](https://github.com/scanurag/jobify/blob/main/screenshots/home.png?raw=true)
 
 ### 🔐 Login Page
 ![Login](./screenshots/login.png)
