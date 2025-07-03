@@ -44,5 +44,20 @@
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
+
+```bash
+jobify/
+├── backend/        # Spring Boot backend
+│   ├── controller/
+│   ├── entity/
+│   ├── service/
+│   ├── repository/
+│   └── config/
+│
+├── frontend/       # React frontend
+│   ├── components/
+│   ├── pages/
+│   ├── context/
+│   └── App.jsx
 
