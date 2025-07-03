@@ -1,94 +1,79 @@
 # 💼 Jobify - Job Portal System
 
-**Jobify** is a full-featured Job Portal designed to connect job seekers and recruiters seamlessly. It allows employees to browse and apply for jobs, while HR professionals can post jobs, manage applications, and review resumes. Built with **Spring Boot (Backend)** and **React.js + TailwindCSS (Frontend)**, Jobify ensures a modern, fast, and responsive user experience.
+![Jobify Banner](https://raw.githubusercontent.com/scanurag/jobify/main/screenshots/banner.png)
+
+**Jobify** is a modern, full-featured job portal that seamlessly connects job seekers and recruiters. Employees can browse and apply for jobs, while HR professionals can post jobs, manage applications, and review resumes. Built with **Spring Boot** for a robust backend and **React.js + TailwindCSS** for a sleek, responsive frontend, Jobify delivers a fast and intuitive user experience.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- 🔐 User Authentication (JWT-based)
-- 👥 Role-Based Access Control (HR & Employee)
-- 📝 Job Posting by HR
-- 🔍 Job Listing & Search
-- 📄 Apply with Resume Upload
-- 📂 Application Management
-- 📬 Download Resume as HR
-- 📊 Dashboards for HR and Employees
-- 🌐 Responsive UI with React + TailwindCSS
-- ☁️ Deployed on AWS (optional)
+- 🔐 **Secure Authentication**: JWT-based login and signup for employees and HR.
+- 👥 **Role-Based Access**: Separate dashboards for Employees and HR.
+- 📝 **Job Management**: HR can create, edit, and delete job postings.
+- 🔍 **Job Search**: Advanced search and filtering for job listings.
+- 📄 **Application System**: Apply to jobs with resume uploads (PDF support).
+- 📂 **Application Tracking**: HR can view, manage, and download applicant resumes.
+- 📊 **Dashboards**: Personalized dashboards for job seekers and recruiters.
+- 🌐 **Responsive UI**: Mobile-friendly design with React and TailwindCSS.
+- ☁️ **Scalable Deployment**: Ready for AWS or other cloud platforms.
 
 ---
 
-## 🧑‍💻 Tech Stack
+## 🛠️ Tech Stack
 
 ### Backend
-- Java 8+
-- Spring Boot
-- Spring MVC
-- Spring Data JPA (Hibernate)
-- MySQL
-- JWT for Authentication
-- Maven
+- **Java 8+** / **Spring Boot**
+- **Spring MVC** for RESTful APIs
+- **Spring Data JPA** (Hibernate) for database operations
+- **MySQL** for persistent storage
+- **JWT** for secure authentication
+- **Maven** for dependency management
 
 ### Frontend
-- React.js
-- Tailwind CSS
-- Axios
-- React Router
+- **React.js** for dynamic UI
+- **TailwindCSS** for modern, responsive styling
+- **Axios** for API requests
+- **React Router** for navigation
 
 ### Dev Tools
-- Spring Tool Suite / Eclipse
-- VS Code
-- Postman
+- **Spring Tool Suite** / **Eclipse** for backend development
+- **VS Code** for frontend development
+- **Postman** for API testing
+- **Git** for version control
 
 ---
 
 ## 📸 Screenshots
 
-### 🏠 Home Page
-![Home Page](https://github.com/scanurag/jobify/blob/main/screenshots/home.png?raw=true)
+| 🏠 **Home Page** | 🔐 **Login Page** |
+|------------------|-------------------|
+| ![Home Page](https://raw.githubusercontent.com/scanurag/jobify/main/screenshots/home.png) | ![Login Page](https://raw.githubusercontent.com/scanurag/jobify/main/screenshots/login.png) |
 
-### 🔐 Login Page
-![Login](./screenshots/login.png)
+| 📝 **Signup Page** | 🧾 **Post Job (HR)** |
+|--------------------|---------------------|
+| ![Signup Page](https://raw.githubusercontent.com/scanurag/jobify/main/screenshots/signup.png) | ![Post Job](https://raw.githubusercontent.com/scanurag/jobify/main/screenshots/post-job.png) |
 
-### 📝 Signup Page
-![Signup](./screenshots/signup.png)
+| 📊 **HR Dashboard** | 📄 **Available Jobs** |
+|---------------------|-----------------------|
+| ![HR Dashboard](https://raw.githubusercontent.com/scanurag/jobify/main/screenshots/dashboard.png) | ![Available Jobs](https://raw.githubusercontent.com/scanurag/jobify/main/screenshots/jobs.png) |
 
-### 🧾 Post Job Page (HR Role)
-![Post Job](./screenshots/post-job.png)
-
-### 📊 HR Dashboard
-![Dashboard HR](./screenshots/dashboard.png)
-
-### 📄 View Available Jobs
-![Available Jobs](./screenshots/jobs.png)
-
->
+> **Note**: If images don't load, ensure the repository is public, or use external hosting (e.g., Imgur) for images.
 
 ---
-# 🎁 Donate
 
-<a href="https://buymeacoffee.com/1122anuragg">
-  <img src="https://user-images.githubusercontent.com/25067102/154570688-9e143f2b-fee3-4b05-a9d2-a7a3013b2b51.png" />
-<a/>
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-repository-url/FoodFrenzy.git
-    ```
+## 🚀 Getting Started
 
-## 📂 Project Structure
+### Prerequisites
+- **Java 8+** (for backend)
+- **Node.js** (for frontend)
+- **MySQL** (for database)
+- **Maven** (for backend dependencies)
+- **Git** (for cloning the repo)
 
-```bash
-jobify/
-├── backend/        # Spring Boot backend
-│   ├── controller/
-│   ├── entity/
-│   ├── service/
-│   ├── repository/
-│   └── config/
-│
-├── frontend/       # React frontend
-│   ├── components/
-│   ├── pages/
-│   ├── context/
-│   └── App.jsx
+### Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/scanurag/jobify.git
+   cd jobify
