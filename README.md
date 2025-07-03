@@ -1,6 +1,7 @@
 # 💼 Jobify - Job Portal System
 
 **Jobify** is a full-featured Job Portal designed to connect job seekers and recruiters seamlessly. It allows employees to browse and apply for jobs, while HR professionals can post jobs, manage applications, and review resumes. Built with **Spring Boot (Backend)** and **React.js + TailwindCSS (Frontend)**, Jobify ensures a modern, fast, and responsive user experience.
+![Uploading Screenshot 2025-07-03 203723.png…]()
 
 ---
 
