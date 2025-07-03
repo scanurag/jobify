@@ -2,7 +2,6 @@
 
 **Jobify** is a full-featured Job Portal designed to connect job seekers and recruiters seamlessly. It allows employees to browse and apply for jobs, while HR professionals can post jobs, manage applications, and review resumes. Built with **Spring Boot (Backend)** and **React.js + TailwindCSS (Frontend)**, Jobify ensures a modern, fast, and responsive user experience.
 
-
 ---
 
 ## 🚀 Features
@@ -43,7 +42,30 @@
 - Postman
 
 ---
-## Setup and Installation
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](./screenshots/home.png)
+
+### 🔐 Login Page
+![Login](./screenshots/login.png)
+
+### 📝 Signup Page
+![Signup](./screenshots/signup.png)
+
+### 🧾 Post Job Page (HR Role)
+![Post Job](./screenshots/post-job.png)
+
+### 📊 HR Dashboard
+![Dashboard HR](./screenshots/dashboard.png)
+
+### 📄 View Available Jobs
+![Available Jobs](./screenshots/jobs.png)
+
+>
+
+---
 # 🎁 Donate
 
 <a href="https://buymeacoffee.com/1122anuragg">
@@ -53,6 +75,7 @@
     ```bash
     git clone https://github.com/your-repository-url/FoodFrenzy.git
     ```
+
 ## 📂 Project Structure
 
 ```bash
@@ -69,4 +92,3 @@ jobify/
 │   ├── pages/
 │   ├── context/
 │   └── App.jsx
-
