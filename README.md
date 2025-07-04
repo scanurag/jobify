@@ -85,7 +85,16 @@ Whether you're an **HR professional** looking to post jobs and manage applicatio
     <td><img src="https://github.com/user-attachments/assets/f877e678-09e0-4bdc-a80d-e78231fdb1e4" width="300"/></td>
   </tr>
 </table>  
-<br>
+<br> 
+<table>
+  <tr>
+    <th>🧾 Application Form</th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/0636228e-64c5-4a30-8aa3-ce190898842f" width="300"/></td>
+  </tr>
+</table> 
+br
 
 ## 📂 Project Structure
 
