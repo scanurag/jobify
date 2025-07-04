@@ -47,22 +47,21 @@
 
 ### 🏠 Home
 ![Image](https://github.com/user-attachments/assets/cc89fb43-458c-42cf-ae44-c9a12a74019c)
-`
 
 ### 🔐 Login
 ![Image](https://github.com/user-attachments/assets/5103ce72-fe4f-4ca6-b5b1-31a20aa5515c)
 
 ### 📝 Signup
-![Signup](https://github.com/scanurag/jobify/blob/main/screenshots/signup.png?raw=true)
+![Image](https://github.com/user-attachments/assets/3ca640c4-c6db-48a2-b7cf-2e4b2e47d1dd)
 
 ### 🧑‍💼 Post Job
-![Post Job](https://github.com/scanurag/jobify/blob/main/screenshots/post-job.png?raw=true)
+![Image](https://github.com/user-attachments/assets/f79787f7-4736-4aec-ac71-79cc30b15451)
 
 ### 📋 Dashboard
-![Dashboard](https://github.com/scanurag/jobify/blob/main/screenshots/dashboard.png?raw=true)
+![Image](https://github.com/user-attachments/assets/f67e95a9-9223-4be9-bb83-02a1c91dd7c5)
 
 ### 📂 Job Card
-![Job Card](https://github.com/scanurag/jobify/blob/main/screenshots/jobs.png?raw=true)
+![Image](https://github.com/user-attachments/assets/9a7d5fe7-5e10-4824-95f1-1cd1ec741581)
 
 # 🎁 Donate
 
