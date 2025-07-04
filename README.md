@@ -81,7 +81,7 @@ Whether you're an **HR professional** looking to post jobs and manage applicatio
     <th>🗃️ Database View</th>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/0636228e-64c5-4a30-8aa3-ce190898842f" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/0636228e-64c5-4a30-8aa3-ce190898842f" width="300" hight="600"/></td>
     <td>
       <img src="https://github.com/user-attachments/assets/53e6bfac-9751-42f4-b6ad-e56a98c3f201" width="300"/><br>
       <img src="https://github.com/user-attachments/assets/f8c53305-91e6-4ff0-bdc4-45219e9754be" width="300"/><br>
