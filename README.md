@@ -142,13 +142,6 @@ git push origin feature/your-feature-name
 # 5. Create a Pull Request
 ```
 
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
-
----
 
 ## ☕ Support & Donate
 
@@ -163,7 +156,7 @@ If you like this project, consider buying me a coffee 💖
 - 📧 **Email**: [1122anurag@gmail.com](mailto:1122anurag@gmail.com)  
 - 📱 **Phone**: +91-8299173654  
 - 🌍 **Location**: Deoria, Uttar Pradesh, India  
-- 🔗 **LinkedIn**: [linkedin.com/in/anuragxsingh](https://linkedin.com/in/anuragxsingh)  
+- 🔗 **LinkedIn**: [linkedin.com/in/anuragxsingh]([https://linkedin.com/in](https://www.linkedin.com/in/scanurag/))  
 - 🔗 **GitHub**: [github.com/scanurag](https://github.com/scanurag)
 
 ---
