@@ -116,14 +116,6 @@ npm run dev
 📌 **Ensure the backend is running on** `http://localhost:8080` **and the frontend on** `http://localhost:5173`.  
 📌 **Don't forget to configure CORS in Spring Boot if required.**
 
----
-
-## 🌐 Live Demo
-
-🔗 [Click here to explore the live version](https://your-jobify-demo-link.com) *(Replace with actual link if deployed)*
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! If you’d like to add features or fix bugs:
