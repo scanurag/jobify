@@ -43,23 +43,53 @@ Whether you're an **HR professional** looking to post jobs and manage applicatio
 - Postman
 - Git & GitHub
 
----
-
 ## 📸 UI Snapshots
 
-| 🏠 Home | 🔐 Login | 📝 Signup |
-|--------|----------|-----------|
-| ![Home](https://github.com/user-attachments/assets/cc89fb43-458c-42cf-ae44-c9a12a74019c) | ![Login](https://github.com/user-attachments/assets/5103ce72-fe4f-4ca6-b5b1-31a20aa5515c) | ![Signup](https://github.com/user-attachments/assets/3ca640c4-c6db-48a2-b7cf-2e4b2e47d1dd) |
+<table>
+  <tr>
+    <th>🏠 Home</th>
+    <th>🔐 Login</th>
+    <th>📝 Signup</th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/cc89fb43-458c-42cf-ae44-c9a12a74019c" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/5103ce72-fe4f-4ca6-b5b1-31a20aa5515c" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/3ca640c4-c6db-48a2-b7cf-2e4b2e47d1dd" width="300"/></td>
+  </tr>
+</table>
 
-| 🧑‍💼 Post Job | 📋 Dashboard | 📂 Job Card |
-|--------------|--------------|-------------|
-| ![PostJob](https://github.com/user-attachments/assets/f79787f7-4736-4aec-ac71-79cc30b15451) | ![Dashboard](https://github.com/user-attachments/assets/f67e95a9-9223-4be9-bb83-02a1c91dd7c5) | ![JobCard](https://github.com/user-attachments/assets/9a7d5fe7-5e10-4824-95f1-1cd1ec741581) |
+<br>
 
-| 🧾 Application Form | 🗃️ Database View |
-|---------------------|------------------|
-| ![Form](https://github.com/user-attachments/assets/0636228e-64c5-4a30-8aa3-ce190898842f) | ![DB1](https://github.com/user-attachments/assets/53e6bfac-9751-42f4-b6ad-e56a98c3f201)<br>![DB2](https://github.com/user-attachments/assets/f8c53305-91e6-4ff0-bdc4-45219e9754be)<br>![DB3](https://github.com/user-attachments/assets/f877e678-09e0-4bdc-a80d-e78231fdb1e4) |
+<table>
+  <tr>
+    <th>🧑‍💼 Post Job</th>
+    <th>📋 Dashboard</th>
+    <th>📂 Job Card</th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/f79787f7-4736-4aec-ac71-79cc30b15451" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/f67e95a9-9223-4be9-bb83-02a1c91dd7c5" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/9a7d5fe7-5e10-4824-95f1-1cd1ec741581" width="300"/></td>
+  </tr>
+</table>
 
----
+<br>
+
+<table>
+  <tr>
+    <th>🧾 Application Form</th>
+    <th>🗃️ Database View</th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/0636228e-64c5-4a30-8aa3-ce190898842f" width="300"/></td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/53e6bfac-9751-42f4-b6ad-e56a98c3f201" width="300"/><br>
+      <img src="https://github.com/user-attachments/assets/f8c53305-91e6-4ff0-bdc4-45219e9754be" width="300"/><br>
+      <img src="https://github.com/user-attachments/assets/f877e678-09e0-4bdc-a80d-e78231fdb1e4" width="300"/>
+    </td>
+  </tr>
+</table>
+
 
 ## 📂 Project Structure
 
