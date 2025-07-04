@@ -82,3 +82,88 @@ jobify/
 │
 ├── README.md
 └── LICENSE
+```
+
+---
+
+## ⚙️ Getting Started
+
+### 📦 Backend Setup
+
+```bash
+# Navigate to backend
+cd backend
+
+# Configure your database credentials in application.properties
+
+# Run the Spring Boot application
+mvn spring-boot:run
+```
+
+### 💻 Frontend Setup
+
+```bash
+# Navigate to frontend
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start the React development server
+npm run dev
+```
+
+📌 **Ensure the backend is running on** `http://localhost:8080` **and the frontend on** `http://localhost:5173`.  
+📌 **Don't forget to configure CORS in Spring Boot if required.**
+
+---
+
+## 🌐 Live Demo
+
+🔗 [Click here to explore the live version](https://your-jobify-demo-link.com) *(Replace with actual link if deployed)*
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you’d like to add features or fix bugs:
+
+```bash
+# 1. Fork the repository
+# 2. Create a new branch
+git checkout -b feature/your-feature-name
+
+# 3. Make your changes & commit
+git commit -m "Add: your message"
+
+# 4. Push your changes
+git push origin feature/your-feature-name
+
+# 5. Create a Pull Request
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
+
+---
+
+## ☕ Support & Donate
+
+If you like this project, consider buying me a coffee 💖
+
+[![Buy Me A Coffee](https://user-images.githubusercontent.com/25067102/154570688-9e143f2b-fee3-4b05-a9d2-a7a3013b2b51.png)](https://buymeacoffee.com/1122anuragg)
+
+---
+
+## 📬 Contact
+
+- 📧 **Email**: [1122anurag@gmail.com](mailto:1122anurag@gmail.com)  
+- 📱 **Phone**: +91-8299173654  
+- 🌍 **Location**: Deoria, Uttar Pradesh, India  
+- 🔗 **LinkedIn**: [linkedin.com/in/anuragxsingh](https://linkedin.com/in/anuragxsingh)  
+- 🔗 **GitHub**: [github.com/scanurag](https://github.com/scanurag)
+
+---
