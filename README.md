@@ -50,7 +50,7 @@
 `
 
 ### 🔐 Login
-![Login](https://github.com/scanurag/jobify/blob/main/screenshots/login.png?raw=true)
+![Image](https://github.com/user-attachments/assets/5103ce72-fe4f-4ca6-b5b1-31a20aa5515c)
 
 ### 📝 Signup
 ![Signup](https://github.com/scanurag/jobify/blob/main/screenshots/signup.png?raw=true)
