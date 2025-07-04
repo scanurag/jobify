@@ -78,6 +78,8 @@ Whether you're an **HR professional** looking to post jobs and manage applicatio
 <table>
   <tr>
     <th>🗃️ Database View</th>
+    <th>🗃️ Database View</th>
+    <th>🗃️ Database View</th>
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/53e6bfac-9751-42f4-b6ad-e56a98c3f201" width="300"/></td>
