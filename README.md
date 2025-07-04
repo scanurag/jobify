@@ -46,7 +46,8 @@
 ## 📸 Screenshots
 
 ### 🏠 Home
-![Home](https://github.com/scanurag/jobify/blob/main/screenshots/home.png?raw=true)
+![Image](https://github.com/user-attachments/assets/cc89fb43-458c-42cf-ae44-c9a12a74019c)
+`
 
 ### 🔐 Login
 ![Login](https://github.com/scanurag/jobify/blob/main/screenshots/login.png?raw=true)
