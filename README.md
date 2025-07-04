@@ -96,7 +96,15 @@ Whether you're an **HR professional** looking to post jobs and manage applicatio
     <td><img src="https://github.com/user-attachments/assets/0636228e-64c5-4a30-8aa3-ce190898842f" width="300"/></td>
   </tr>
 </table>  
+```
 
+## ☕ Support & Donate
+
+If you like this project, consider buying me a coffee 💖
+
+[![Buy Me A Coffee](https://user-images.githubusercontent.com/25067102/154570688-9e143f2b-fee3-4b05-a9d2-a7a3013b2b51.png)](https://buymeacoffee.com/1122anuragg)
+
+---
 ## 📂 Project Structure
 
 ```bash
@@ -168,16 +176,6 @@ git commit -m "Add: your message"
 git push origin feature/your-feature-name
 
 # 5. Create a Pull Request
-```
-
-
-## ☕ Support & Donate
-
-If you like this project, consider buying me a coffee 💖
-
-[![Buy Me A Coffee](https://user-images.githubusercontent.com/25067102/154570688-9e143f2b-fee3-4b05-a9d2-a7a3013b2b51.png)](https://buymeacoffee.com/1122anuragg)
-
----
 
 ## 📬 Contact
 
