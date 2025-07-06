@@ -6,7 +6,7 @@ Whether you're an **HR professional** looking to post jobs and manage applicatio
 
 ---
 
-## 🚀 Features at a Glance
+## 🚀 Features at a Glance.
 
 - 🔐 **Secure Authentication** – JWT-based login & registration
 - 👥 **Role-Based Access Control** – Separate access for HR & Employee
