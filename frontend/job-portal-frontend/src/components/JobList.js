@@ -12,7 +12,7 @@ const JobList = () => {
     const fetchJobs = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:8080/api/jobs/view', {
+        const response = await axios.get('https://jobify-0l8l.onrender.com/api/jobs/view', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -45,7 +45,6 @@ const JobList = () => {
             <p>Type: {job.jobType}</p>
             <p className="text-sm text-gray-600">Posted by: {job.postedBy?.email}</p>
 
-            {/* ✅ Show the 'about' field */}
             {job.about && (
               <p className="text-gray-700 mt-2">
                 <span className="font-semibold">About:</span>{' '}
@@ -84,5 +83,4 @@ const JobList = () => {
 };
 
 export default JobList;
-
 

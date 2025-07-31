@@ -13,7 +13,7 @@ const JobForm = () => {
     location: '',
     salary: '',
     jobType: '',
-    about: '', 
+    about: '',
   });
 
   const [error, setError] = useState('');
@@ -32,7 +32,7 @@ const JobForm = () => {
 
     try {
       const token = localStorage.getItem('token');
-      await axios.post('http://localhost:8080/api/jobs', formData, {
+      await axios.post('https://jobify-0l8l.onrender.com/api/jobs', formData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

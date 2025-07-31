@@ -3,26 +3,31 @@ import axios from 'axios';
 import { AuthContext } from '../context/AuthContext';
 
 const Dashboard = () => {
-  const { user } = useContext(AuthContext);
+  const { user, token } = useContext(AuthContext);
   const [jobs, setJobs] = useState([]);
   const [applications, setApplications] = useState([]);
+
+  const BASE_URL = "https://jobify-0l8l.onrender.com";
 
   useEffect(() => {
     if (!user) return;
 
     const fetchData = async () => {
       try {
+        const config = {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        };
+
         if (user.role === 'HR') {
-          // Fetch posted jobs
-          const jobResponse = await axios.get('http://localhost:8080/api/jobs/view');
+          const jobResponse = await axios.get(`${BASE_URL}/api/jobs/view`, config);
           setJobs(jobResponse.data.filter((job) => job.postedBy.email === user.email));
 
-          // Fetch applications received for jobs posted by HR
-          const appResponse = await axios.get(`http://localhost:8080/api/crm/applications/hr?email=${user.email}`);
+          const appResponse = await axios.get(`${BASE_URL}/api/crm/applications/hr?email=${user.email}`, config);
           setApplications(appResponse.data);
         } else if (user.role === 'EMPLOYEE') {
-          // Fetch applications submitted by employee
-          const response = await axios.get('http://localhost:8080/api/crm/applications');
+          const response = await axios.get(`${BASE_URL}/api/crm/applications`, config);
           setApplications(response.data);
         }
       } catch (error) {
@@ -31,11 +36,15 @@ const Dashboard = () => {
     };
 
     fetchData();
-  }, [user]);
+  }, [user, token]);
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/api/jobs/${id}`);
+      await axios.delete(`${BASE_URL}/api/jobs/${id}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
       setJobs(jobs.filter((job) => job.id !== id));
     } catch (error) {
       console.error('Error deleting job:', error);
@@ -77,16 +86,13 @@ const Dashboard = () => {
                 <p>Phone: {app.coverLetter?.split('Phone:')[1]}</p>
                 <p>Status: {app.status}</p>
                 <p>Applied On: {app.applyDate}</p>
-
-              <a
-  href={`http://localhost:8080/api/resume/download/${encodeURIComponent(app.resumeUrl)}`}
-  download
-  className="text-blue-600 hover:underline mt-2 inline-block"
->
-  Download Resume
-</a>
-
-
+                <a
+                  href={`${BASE_URL}/api/resume/download/${encodeURIComponent(app.resumeUrl)}`}
+                  download
+                  className="text-blue-600 hover:underline mt-2 inline-block"
+                >
+                  Download Resume
+                </a>
               </div>
             ))}
           </div>
@@ -101,15 +107,14 @@ const Dashboard = () => {
                 <p>Company: {app.job.company}</p>
                 <p>Status: {app.status}</p>
                 <p>Applied On: {app.applyDate}</p>
-<a
-  href={`http://localhost:8080/api/resume/download/${app.resumeUrl}`}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-blue-600 hover:underline mt-2 inline-block"
->
-  View Submitted Resume
-</a>
-
+                <a
+                  href={`${BASE_URL}/api/resume/download/${encodeURIComponent(app.resumeUrl)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline mt-2 inline-block"
+                >
+                  View Submitted Resume
+                </a>
               </div>
             ))}
           </div>
@@ -120,4 +125,5 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
 

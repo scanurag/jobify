@@ -16,7 +16,7 @@ const JobDetails = () => {
   useEffect(() => {
     const fetchJob = async () => {
       try {
-        const response = await axios.get(`http://localhost:8080/api/jobs/${id}`);
+        const response = await axios.get(`https://jobify-0l8l.onrender.com/api/jobs/${id}`);
         setJob(response.data);
       } catch (error) {
         console.error('Error fetching job:', error); 
@@ -44,10 +44,11 @@ const JobDetails = () => {
     formData.append('jobId', id);
     formData.append('email', user.email);
     formData.append('fullName', user.name);
-    formData.append('phone', user.phone || 'NA'); // Add default if not available
+    formData.append('phone', user.phone || 'NA');
+    formData.append('coverLetter', coverLetter); // this was missing in your formData
 
     try {
-      await axios.post('http://localhost:8080/api/apply', formData, {
+      await axios.post('https://jobify-0l8l.onrender.com/api/apply', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -108,3 +109,4 @@ const JobDetails = () => {
 };
 
 export default JobDetails;
+

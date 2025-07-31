@@ -7,6 +7,8 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [token, setToken] = useState(localStorage.getItem('token') || '');
 
+  const BASE_URL = 'https://jobify-0l8l.onrender.com/api';
+
   useEffect(() => {
     if (token) {
       axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
@@ -21,7 +23,7 @@ export const AuthProvider = ({ children }) => {
   }, [token]);
 
   const login = async (email, password, type) => {
-    const response = await axios.post(`http://localhost:8080/api/login/${type}`, { email, password });
+    const response = await axios.post(`${BASE_URL}/login/${type}`, { email, password });
     const { token } = response.data;
     setToken(token);
     localStorage.setItem('token', token);
@@ -31,7 +33,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const signup = async (userData, type) => {
-    await axios.post(`http://localhost:8080/api/signup/${type}`, userData);
+    await axios.post(`${BASE_URL}/signup/${type}`, userData);
   };
 
   const logout = () => {
@@ -47,3 +49,4 @@ export const AuthProvider = ({ children }) => {
     </AuthContext.Provider>
   );
 };
+
