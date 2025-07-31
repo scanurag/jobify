@@ -77,8 +77,9 @@ const Dashboard = () => {
                 <p>Phone: {app.coverLetter?.split('Phone:')[1]}</p>
                 <p>Status: {app.status}</p>
                 <p>Applied On: {app.applyDate}</p>
-                <a
-  href={`http://localhost:8080/api/resume/download/${app.resumeUrl.replace('/uploads/', '')}`}
+
+              <a
+  href={`http://localhost:8080/api/resume/download/${encodeURIComponent(app.resumeUrl)}`}
   download
   className="text-blue-600 hover:underline mt-2 inline-block"
 >
