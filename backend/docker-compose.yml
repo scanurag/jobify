@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  app:
+    image: scanurag/online-job-portal:latest
+    container_name: online-job-container
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/neondb
+      SPRING_DATASOURCE_USERNAME: neondb_owner
+      SPRING_DATASOURCE_PASSWORD: npg_iwvo4c8OhpYg
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.PostgreSQLDialect
+      JWT_SECRET: MySuperSecretKeyThatIsAtLeast32Chars
+
+  db:
+    image: postgres:15
+    container_name: pg-neondb
+    restart: always
+    environment:
+      POSTGRES_DB: neondb
+      POSTGRES_USER: neondb_owner
+      POSTGRES_PASSWORD: npg_iwvo4c8OhpYg
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:
