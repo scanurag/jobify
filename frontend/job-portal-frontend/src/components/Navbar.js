@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="bg-blue-600 p-4 text-white">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold">Job Portal</Link>
+        <Link to="/" className="text-2xl font-bold">jobify</Link>
         <div className="space-x-4">
           <Link to="/jobs">Jobs</Link>
           {user ? (
