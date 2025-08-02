@@ -14,8 +14,8 @@ public class WebConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins(
-                            "https://jobify-1-i2eu.onrender.com", // ✅ your frontend domain
-                            "http://localhost:3000"               // ✅ local dev (optional)
+                            "https://jobify-1-i2eu.onrender.com", 
+                            "http://localhost:3000"               
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")

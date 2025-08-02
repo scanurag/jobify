@@ -13,7 +13,7 @@ public class CorsConfig implements WebMvcConfigurer {
                 .allowedOrigins(
                     "http://localhost:3000",
                     "http://localhost:3006",
-                    "https://jobify-1-i2eu.onrender.com"  // ✅ frontend on Render
+                    "https://jobify-1-i2eu.onrender.com"  
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
