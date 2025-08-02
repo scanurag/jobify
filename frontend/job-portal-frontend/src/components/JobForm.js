@@ -18,6 +18,8 @@ const JobForm = () => {
 
   const [error, setError] = useState('');
 
+  const BASE_URL = process.env.REACT_APP_API_URL;
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -32,7 +34,7 @@ const JobForm = () => {
 
     try {
       const token = localStorage.getItem('token');
-      await axios.post('https://jobify-0l8l.onrender.com/api/jobs', formData, {
+      await axios.post(`${BASE_URL}/jobs`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -135,4 +137,5 @@ const JobForm = () => {
 };
 
 export default JobForm;
+
 

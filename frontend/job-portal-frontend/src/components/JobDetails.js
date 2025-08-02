@@ -8,6 +8,8 @@ const JobDetails = () => {
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
 
+  const BASE_URL = process.env.REACT_APP_API_URL;
+
   const [job, setJob] = useState(null);
   const [resume, setResume] = useState(null);
   const [coverLetter, setCoverLetter] = useState('');
@@ -16,15 +18,15 @@ const JobDetails = () => {
   useEffect(() => {
     const fetchJob = async () => {
       try {
-        const response = await axios.get(`https://jobify-0l8l.onrender.com/api/jobs/${id}`);
+        const response = await axios.get(`${BASE_URL}/jobs/${id}`);
         setJob(response.data);
       } catch (error) {
-        console.error('Error fetching job:', error); 
+        console.error('Error fetching job:', error);
         setError('Unable to load job details');
       }
     };
     fetchJob();
-  }, [id]);
+  }, [id, BASE_URL]);
 
   const handleApply = async (e) => {
     e.preventDefault();
@@ -45,13 +47,11 @@ const JobDetails = () => {
     formData.append('email', user.email);
     formData.append('fullName', user.name);
     formData.append('phone', user.phone || 'NA');
-    formData.append('coverLetter', coverLetter); // this was missing in your formData
+    formData.append('coverLetter', coverLetter);
 
     try {
-      await axios.post('https://jobify-0l8l.onrender.com/api/apply', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
+      await axios.post(`${BASE_URL}/apply`, formData, {
+        headers: { 'Content-Type': 'multipart/form-data' },
       });
       alert('Application submitted successfully!');
       navigate('/dashboard');
@@ -109,4 +109,3 @@ const JobDetails = () => {
 };
 
 export default JobDetails;
-

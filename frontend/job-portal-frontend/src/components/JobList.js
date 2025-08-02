@@ -8,11 +8,13 @@ const JobList = () => {
   const navigate = useNavigate();
   const [jobs, setJobs] = useState([]);
 
+  const BASE_URL = process.env.REACT_APP_API_URL;
+
   useEffect(() => {
     const fetchJobs = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('https://jobify-0l8l.onrender.com/api/jobs/view', {
+        const response = await axios.get(`${BASE_URL}/jobs/view`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

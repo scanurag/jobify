@@ -7,7 +7,7 @@ const Dashboard = () => {
   const [jobs, setJobs] = useState([]);
   const [applications, setApplications] = useState([]);
 
-  const BASE_URL = "https://jobify-0l8l.onrender.com";
+  const BASE_URL = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     if (!user) return;
@@ -21,13 +21,13 @@ const Dashboard = () => {
         };
 
         if (user.role === 'HR') {
-          const jobResponse = await axios.get(`${BASE_URL}/api/jobs/view`, config);
+          const jobResponse = await axios.get(`${BASE_URL}/jobs/view`, config);
           setJobs(jobResponse.data.filter((job) => job.postedBy.email === user.email));
 
-          const appResponse = await axios.get(`${BASE_URL}/api/crm/applications/hr?email=${user.email}`, config);
+          const appResponse = await axios.get(`${BASE_URL}/crm/applications/hr?email=${user.email}`, config);
           setApplications(appResponse.data);
         } else if (user.role === 'EMPLOYEE') {
-          const response = await axios.get(`${BASE_URL}/api/crm/applications`, config);
+          const response = await axios.get(`${BASE_URL}/crm/applications`, config);
           setApplications(response.data);
         }
       } catch (error) {
@@ -36,11 +36,11 @@ const Dashboard = () => {
     };
 
     fetchData();
-  }, [user, token]);
+  }, [user, token, BASE_URL]);
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`${BASE_URL}/api/jobs/${id}`, {
+      await axios.delete(`${BASE_URL}/jobs/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -87,7 +87,7 @@ const Dashboard = () => {
                 <p>Status: {app.status}</p>
                 <p>Applied On: {app.applyDate}</p>
                 <a
-                  href={`${BASE_URL}/api/resume/download/${encodeURIComponent(app.resumeUrl)}`}
+                  href={`${BASE_URL}/resume/download/${encodeURIComponent(app.resumeUrl)}`}
                   download
                   className="text-blue-600 hover:underline mt-2 inline-block"
                 >
@@ -108,7 +108,7 @@ const Dashboard = () => {
                 <p>Status: {app.status}</p>
                 <p>Applied On: {app.applyDate}</p>
                 <a
-                  href={`${BASE_URL}/api/resume/download/${encodeURIComponent(app.resumeUrl)}`}
+                  href={`${BASE_URL}/resume/download/${encodeURIComponent(app.resumeUrl)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:underline mt-2 inline-block"
