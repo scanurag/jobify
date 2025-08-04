@@ -1,8 +1,10 @@
 package com.org.config;
 
 import java.util.Arrays;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.cors.CorsConfiguration;
@@ -18,15 +20,16 @@ public class SecurityConfig {
             .cors(cors -> cors.configurationSource(corsConfigurationSource()))
             .csrf(csrf -> csrf.disable())
             .authorizeHttpRequests(auth -> auth
+                .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll() // ✅ Allow preflight requests
                 .requestMatchers(
-                    "/api/**",                           
-                    "/api/jobs/**",                      
-                    "/api/apply",                        
-                    "/api/applications/**",              
-                    "/api/crm/applications/**",          
-                    "/api/crm/applications/hr",          
-                    "/api/upload",                       
-                    "/api/login/**"                      
+                    "/api/**",
+                    "/api/jobs/**",
+                    "/api/apply",
+                    "/api/applications/**",
+                    "/api/crm/applications/**",
+                    "/api/crm/applications/hr",
+                    "/api/upload",
+                    "/api/login/**"
                 ).permitAll()
                 .anyRequest().authenticated()
             );
@@ -37,14 +40,26 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
+
         config.setAllowedOrigins(Arrays.asList(
             "https://jobify-1-i2eu.onrender.com",
             "http://localhost:3000"
         ));
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
-        config.setAllowedHeaders(Arrays.asList("*"));
+        config.setAllowedHeaders(Arrays.asList(
+            "Authorization",
+            "Content-Type",
+            "X-Requested-With",
+            "Accept"
+        ));
+        config.setExposedHeaders(Arrays.asList(
+            "Authorization",
+            "Content-Type",
+            "Access-Control-Allow-Origin"
+        ));
         config.setAllowCredentials(true);
-        config.setExposedHeaders(Arrays.asList("Access-Control-Allow-Origin"));
+        config.setMaxAge(3600L); // Optional: cache preflight response for 1 hour
+
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", config);
         return source;
