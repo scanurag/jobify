@@ -42,8 +42,8 @@ public class SecurityConfig {
         CorsConfiguration config = new CorsConfiguration();
         
         config.setAllowedOrigins(List.of(
-            "https://jobify-1-i2eu.onrender.com",  // Frontend deployed domain
-            "http://localhost:3000"                // For local dev
+            "https://jobify-1-i2eu.onrender.com",  
+            "http://localhost:3000"                
         ));
         
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
