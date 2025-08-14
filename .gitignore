@@ -1,0 +1,16 @@
+# Node
+node_modules/
+frontend/job-portal-frontend/node_modules/
+
+# React build
+build/
+frontend/job-portal-frontend/build/
+
+# Java Maven target
+target/
+backend/target/
+
+# Env files
+.env
+frontend/job-portal-frontend/.env
+backend/.env
