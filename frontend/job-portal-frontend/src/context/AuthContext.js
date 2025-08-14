@@ -7,7 +7,7 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [token, setToken] = useState(localStorage.getItem('token') || '');
 
-  const BASE_URL = process.env.REACT_APP_API_URL;
+ const BASE_URL = process.env.REACT_APP_API_URL || 'https://jobify-9pw8.onrender.com/api';
 console.log("BASE_URL:", process.env.REACT_APP_API_URL);
 
   useEffect(() => {
@@ -50,3 +50,4 @@ console.log("BASE_URL:", process.env.REACT_APP_API_URL);
     </AuthContext.Provider>
   );
 };
+
