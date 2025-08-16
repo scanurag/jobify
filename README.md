@@ -54,7 +54,7 @@ Whether you're an **HR professional** looking to post jobs and manage applicatio
   <tr>
     <td><img width="1915" height="1079" alt="Image" src="https://github.com/user-attachments/assets/0d0daec9-b1a5-4b90-b447-4352b068157c" /></td>
     <td><img width="1897" height="1079" alt="Image" src="https://github.com/user-attachments/assets/63788edc-f7c6-4e89-ae2c-8df739c38c36" /></td>
-    <td><img src="https://github.com/user-attachments/assets/3ca640c4-c6db-48a2-b7cf-2e4b2e47d1dd" width="300"/></td>
+    <td><img width="1919" height="1079" alt="Image" src="https://github.com/user-attachments/assets/a381ef74-b086-4aa0-bfd6-579308d19f3a" /></td>
   </tr>
 </table>
 
@@ -67,9 +67,9 @@ Whether you're an **HR professional** looking to post jobs and manage applicatio
     <th>📂 Job Card</th>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/f79787f7-4736-4aec-ac71-79cc30b15451" width="300"/></td>
-    <td><img src="https://github.com/user-attachments/assets/f67e95a9-9223-4be9-bb83-02a1c91dd7c5" width="300"/></td>
-    <td><img src="https://github.com/user-attachments/assets/9a7d5fe7-5e10-4824-95f1-1cd1ec741581" width="300"/></td>
+    <td><img width="1912" height="1055" alt="Image" src="https://github.com/user-attachments/assets/3b7f813d-d76a-4f92-9278-278486e54ffb" /></td>
+    <td><img width="1917" height="1075" alt="Image" src="https://github.com/user-attachments/assets/e5fed8e0-04d8-4868-8589-2ad6f2150bed" /></td>
+    <td><img width="1917" height="1076" alt="Image" src="https://github.com/user-attachments/assets/e2731f8d-69aa-48de-b936-62122f31336f" /></td>
   </tr>
 </table>
 
@@ -82,9 +82,8 @@ Whether you're an **HR professional** looking to post jobs and manage applicatio
     <th>🗃️ Database View</th>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/53e6bfac-9751-42f4-b6ad-e56a98c3f201" width="300"/></td>
-    <td><img src="https://github.com/user-attachments/assets/f8c53305-91e6-4ff0-bdc4-45219e9754be" width="300"/></td>
-    <td><img src="https://github.com/user-attachments/assets/f877e678-09e0-4bdc-a80d-e78231fdb1e4" width="300"/></td>
+    <td><img width="1913" height="1077" alt="Image" src="https://github.com/user-attachments/assets/710a2c33-bccc-48b4-9ed5-9b0c5e6a075d" /></td>
+    <td><img width="1907" height="1075" alt="Image" src="https://github.com/user-attachments/assets/7752c22f-38fa-4028-ba33-83903e197d8c" /></td>
   </tr>
 </table>  
 <br> 
@@ -93,7 +92,7 @@ Whether you're an **HR professional** looking to post jobs and manage applicatio
     <th>🧾 Application Form</th>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/0636228e-64c5-4a30-8aa3-ce190898842f" width="300"/></td>
+    <td><img width="1919" height="1077" alt="Image" src="https://github.com/user-attachments/assets/1323fc36-05cf-4eae-a413-9ecaff2f8344" /></td>
   </tr>
 </table>  
 ```
