@@ -49,7 +49,6 @@ Whether you're an **HR professional** looking to post jobs and manage applicatio
   <tr>
     <th>🏠 Home</th>
     <th>🔐 Login</th>
-    <th>📝 Signup</th>
   </tr>
   <tr>
     <td><img width="1915" height="1079" alt="Image" src="https://github.com/user-attachments/assets/0d0daec9-b1a5-4b90-b447-4352b068157c" /></td>
@@ -83,7 +82,6 @@ Whether you're an **HR professional** looking to post jobs and manage applicatio
 </table>
 <table>
   <tr>
-    <th>🗃️ Database View</th>
     <th>🗃️ Database View</th>
     <th>🗃️ Database View</th>
   </tr>
