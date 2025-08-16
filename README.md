@@ -54,7 +54,6 @@ Whether you're an **HR professional** looking to post jobs and manage applicatio
   <tr>
     <td><img width="1915" height="1079" alt="Image" src="https://github.com/user-attachments/assets/0d0daec9-b1a5-4b90-b447-4352b068157c" /></td>
     <td><img width="1897" height="1079" alt="Image" src="https://github.com/user-attachments/assets/63788edc-f7c6-4e89-ae2c-8df739c38c36" /></td>
-    <td><img width="1919" height="1079" alt="Image" src="https://github.com/user-attachments/assets/a381ef74-b086-4aa0-bfd6-579308d19f3a" /></td>
   </tr>
 </table>
 
@@ -63,18 +62,25 @@ Whether you're an **HR professional** looking to post jobs and manage applicatio
 <table>
   <tr>
     <th>🧑‍💼 Post Job</th>
-    <th>📋 Dashboard</th>
     <th>📂 Job Card</th>
   </tr>
   <tr>
     <td><img width="1912" height="1055" alt="Image" src="https://github.com/user-attachments/assets/3b7f813d-d76a-4f92-9278-278486e54ffb" /></td>
-    <td><img width="1917" height="1075" alt="Image" src="https://github.com/user-attachments/assets/e5fed8e0-04d8-4868-8589-2ad6f2150bed" /></td>
     <td><img width="1917" height="1076" alt="Image" src="https://github.com/user-attachments/assets/e2731f8d-69aa-48de-b936-62122f31336f" /></td>
   </tr>
 </table>
 
 <br>
-
+<table>
+  <tr>
+    <th>📋 Dashboard</th>
+    <th>📝 Signup</th>
+  </tr>
+  <tr>
+    <td><img width="1917" height="1075" alt="Image" src="https://github.com/user-attachments/assets/e5fed8e0-04d8-4868-8589-2ad6f2150bed" /></td>
+    <td><img width="1919" height="1079" alt="Image" src="https://github.com/user-attachments/assets/a381ef74-b086-4aa0-bfd6-579308d19f3a" /></td>
+  </tr>
+</table>
 <table>
   <tr>
     <th>🗃️ Database View</th>
