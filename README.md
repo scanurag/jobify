@@ -53,7 +53,7 @@ Whether you're an **HR professional** looking to post jobs and manage applicatio
   </tr>
   <tr>
     <td><img width="1915" height="1079" alt="Image" src="https://github.com/user-attachments/assets/0d0daec9-b1a5-4b90-b447-4352b068157c" /></td>
-    <td><img src="https://github.com/user-attachments/assets/5103ce72-fe4f-4ca6-b5b1-31a20aa5515c" width="300"/></td>
+    <td><img width="1897" height="1079" alt="Image" src="https://github.com/user-attachments/assets/63788edc-f7c6-4e89-ae2c-8df739c38c36" /></td>
     <td><img src="https://github.com/user-attachments/assets/3ca640c4-c6db-48a2-b7cf-2e4b2e47d1dd" width="300"/></td>
   </tr>
 </table>
